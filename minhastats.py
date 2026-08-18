@@ -22,3 +22,15 @@ def moda(dados):
         if contagem[valor] == maior:
             modas.append(valor)
     return modas
+def variancia(dados, amostral=True):
+    m = media(dados)
+    n = len(dados)
+    soma = 0
+    for x in dados:
+                soma += (x - m) ** 2
+    if amostral:
+        return soma / (n - 1)
+    else:
+        return soma / n
+def desvio_padrao(dados, amostral=True):
+        return variancia(dados, amostral) ** 0.5
