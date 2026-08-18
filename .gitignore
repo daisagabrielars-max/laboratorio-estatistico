@@ -1,3 +1,7 @@
 .venv/
 __pycache__/
 teste.py
+.venv/
+__pycache__/
+teste.py
+data/TMDB_tv_dataset_v3.csv
