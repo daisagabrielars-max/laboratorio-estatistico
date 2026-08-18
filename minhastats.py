@@ -7,3 +7,5 @@ def mediana(dados):
         return ordenados[n // 2]
     else:
         return  (ordenados[n // 2 - 1] + ordenados[n // 2]) / 2
+def amplitude(dados):
+    return max(dados) - min(dados)   
